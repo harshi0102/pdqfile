@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Healthcare needs thought leaders to shape industry trends, inspire the next generation, and elevate healthcare's impact on a global scale.">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="Healthcare, Thought Leadership, Industry Trends, Healthcare Influence, Global Impact">
+  <title>Healthcare Needs Your Voice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Icons -->
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    /* Center the section containing feature cards */
+    .iconsfeature2 {
+      background-color: white;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Stack the feature cards vertically */
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d4ed8;
+      margin-top: 50px;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+    }
+
+    /* Feature Card Styles */
+    .feature-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      max-width: 900px; /* Limiting the width */
+      width: 100%;
+    }
+
+    /* Animation for Fade In */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover effect for feature cards */
+    .feature-card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Icon styles */
+    .feature-card i {
+      font-size: 4rem;
+      color: #1d4ed8;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card i:hover {
+      transform: scale(1.1);
+    }
+
+    .feature-card h2 {
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    .feature-card p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #333;
+      opacity: 0;
+      animation: fadeInText 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Grid Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      justify-items: center;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 319px) {
+      .feature-card {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .feature-card h2 {
+        font-size: 1.2rem;
+      }
+
+      .feature-card p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 479px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card h2 {
+        font-size: 1.2rem;
+      }
+
+      .feature-card p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feature-card h2 {
+        font-size: 1.25rem;
+      }
+
+      .feature-card p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .feature-card h2 {
+        font-size: 1.25rem;
+      }
+
+      .feature-card p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .feature-card h2 {
+        font-size: 1.5rem;
+      }
+
+      .feature-card p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .feature-card h2 {
+        font-size: 1.75rem;
+      }
+
+      .feature-card p {
+        font-size: 1.1rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="iconsfeature2">
+    <div class="iconssection1">
+      <h1>The Power of Thought Leadership in Healthcare</h1>
+
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h2>Shape Industry Trends and Policy</h2>
+        <p>As a recognized thought leader, your insights will influence key decision-makers, shaping policies and practices that impact millions of lives.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-users"></i>
+        <h2>Inspire the Next Generation</h2>
+        <p>Your journey and wisdom will serve as a beacon for up-and-coming healthcare professionals, guiding them towards innovation and excellence.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-globe"></i>
+        <h2>Global Influence</h2>
+        <p>Extend your impact far beyond your immediate practice or organization, affecting positive change on a global scale.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-book"></i>
+        <h2>Create a Lasting Legacy</h2>
+        <p>Develop a body of work and initiatives that will continue to influence healthcare long after your active career.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-microphone-alt"></i>
+        <h2>Prestigious Opportunities</h2>
+        <p>Gain access to high-profile speaking engagements, book deals, advisory roles, and media appearances.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fas fa-chart-line"></i>
+        <h2>Elevate Your Personal and Organizational Brand</h2>
+        <p>Enhance your reputation and that of your organization, attracting top talent, partnerships, and opportunities.</p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

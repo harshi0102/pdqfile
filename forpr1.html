@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary Impact Program</title>
+  <!-- Manrope font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global styles */
+    .wisdom {
+      font-family: 'Manrope', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*min-height: 100vh;*/
+      overflow: hidden;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 1200px; /* Reduced the max width */
+      width: 100%; /* Set width to 90% of the viewport width */
+    }
+
+    /* Title styles */
+    .title {
+      font-size: 1.8rem; /* Reduced font size */
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #1d4ed8;
+      opacity: 0; /* Start as invisible */
+      transform: translateY(20px); /* Start slightly lower */
+      animation: fadeInUp 1s ease-out forwards; /* Apply animation */
+    }
+
+    /* Subtitle styles */
+    .subtitle {
+      font-size: 1.5rem; /* Reduced font size */
+      font-weight: 600;
+      color: #1d4ed8;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      opacity: 0; /* Start as invisible */
+      transform: translateY(20px); /* Start slightly lower */
+      animation: fadeInUp 1s 0.3s ease-out forwards; /* Apply animation with delay */
+    }
+
+    /* Content styles */
+    .content {
+      font-size: 1rem;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    /* Program list styles */
+    .program-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+    }
+
+    .program-list li {
+      color: black;
+      font-weight: 600;
+    }
+
+    /* Graceful animation for title and subtitle */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+      }
+    }
+
+    /* Mobile Portrait */
+    @media (min-width: 320px) and (max-width: 479px) {
+      .container {
+        padding: 15px;
+      }
+      .title {
+        font-size: 1.4rem;
+      }
+      .subtitle {
+        font-size: 1.2rem;
+      }
+      .content, .program-list li {
+        font-size: 0.875rem;
+      }
+    }
+
+    /* Mobile Landscape */
+    @media (min-width: 480px) and (max-width: 767px) {
+      .container {
+        padding: 15px;
+      }
+      .title {
+        font-size: 1.6rem;
+      }
+      .subtitle {
+        font-size: 1.4rem;
+      }
+      .content, .program-list li {
+        font-size: 1rem;
+      }
+    }
+
+    /* Tablet Portrait */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .container {
+        padding: 20px;
+      }
+      .title {
+        font-size: 1.75rem;
+      }
+      .subtitle {
+        font-size: 1.5rem;
+      }
+      .content, .program-list li {
+        font-size: 1.125rem;
+      }
+    }
+
+    /* Tablet Landscape */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .container {
+        padding: 25px;
+      }
+      .title {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 1.75rem;
+      }
+      .content, .program-list li {
+        font-size: 1.25rem;
+      }
+    }
+
+    /* Laptop and larger screens */
+    @media (min-width: 1280px) {
+      .container {
+        padding: 30px;
+      }
+      .title {
+        font-size: 2.25rem;
+      }
+      .subtitle {
+        font-size: 1.85rem;
+      }
+      .content, .program-list li {
+        font-size: 1.125rem;
+      }
+    }
+
+    /* Widescreen (larger than 1600px) */
+    @media (min-width: 1600px) {
+      .container {
+        max-width: 1400px;
+        padding: 40px;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+      .subtitle {
+        font-size: 2rem;
+      }
+      .content, .program-list li {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+        <h1 class="title">Amplify your impact, shape the future of healthcare, and create a legacy that transcends generations</h1>
+  <section class="wisdom">
+      
+    <div class="container">
+  
+      <h2 class="subtitle">Your Wisdom, Amplified</h2>
+      <p class="content">
+        As a seasoned healthcare professional, you've accumulated a wealth of knowledge and experience that has the power to transform the industry. Whether you're a visionary CEO steering a healthcare organization through complex challenges, or a private practice doctor who's pioneered innovative treatment approaches, your insights are invaluable.
+      </p>
+      <p class="content">
+        But are you leveraging your expertise to its fullest potential? Are your ideas reaching beyond the confines of your immediate sphere of influence?
+      </p>
+      <p class="content">
+        Our exclusive "<span style="color:#1d4ed8; font-weight:bold;">Visionary Impact Program</span>" is meticulously crafted for elite healthcare professionals like you who are ready to:
+      </p>
+      <ul class="program-list">
+        <li>Amplify their voice on a global stage</li>
+        <li>Shape the discourse around critical healthcare issues</li>
+        <li>Inspire and mentor the next generation of medical professionals</li>
+        <li>Leave an indelible mark on the future of medicine</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

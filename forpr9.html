@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Section styles for FAQ */
+        .faq-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            color: blue; /* Blue */
+            margin-bottom: 20px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .faq-container {
+                padding: 15px;
+            }
+
+            .headline {
+                font-size: 2rem !important; /* Fix headline font size for tablets and below */
+            }
+
+            .faq-item {
+                padding: 15px;
+            }
+
+            .question {
+                font-size: 1.1rem;
+            }
+
+            .answer {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .faq-container {
+                padding: 10px;
+            }
+
+            .headline {
+                font-size: 1.7rem !important; /* Fix headline font size for mobile devices */
+            }
+
+            .faq-item {
+                padding: 10px;
+            }
+
+            .question {
+                font-size: 1.4rem !important;
+                text-align:center;
+            }
+
+            .answer {
+                font-size: 0.9rem;
+                text-align:center;
+            }
+            
+        }
+
+        @media (min-width: 1200px) {
+            .faq-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1 class="headline">Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="question">How long does it take to see results?</div>
+            <div class="answer">While the journey to thought leadership is ongoing, many of our clients begin to see significant traction within 3-6 months, with major opportunities often presenting themselves within the first year.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How much time will I need to commit to this program?</div>
+            <div class="answer">To get the most out of the program, we recommend setting aside 5-10 hours per week for content creation, coaching sessions, and related activities. However, we understand the demanding nature of healthcare leadership and will work with you to create a schedule that fits your lifestyle.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">What if I'm not comfortable with public speaking or social media?</div>
+            <div class="answer">Many of our most successful clients started out with these concerns. Our program is designed to build your skills and confidence gradually. We'll work at your pace and focus on the platforms and methods that feel most authentic to you.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How is this different from hiring a PR firm?</div>
+            <div class="answer">While PR is a component of thought leadership, our program goes much deeper. We focus on developing your unique insights, creating substantial content, building lasting industry relationships, and creating a long-term legacy. Our goal is not just to get you press, but to position you as a true leader and innovator in healthcare.</div>
+        </div>
+    </div>
+</body>
+</html>

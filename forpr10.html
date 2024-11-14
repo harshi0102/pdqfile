@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Leadership Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: white;
+            color: #333;
+        }
+
+        /* Section Styles */
+        .cta-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .cta-content {
+            max-width: 1200px;
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .cta-headline {
+            font-size: 2.5rem;
+            color: blue;
+            margin-bottom: 20px;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Flex container for buttons */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secondary {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            background-color: white;
+            color: blue;
+            border: 2px solid lightblue;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: blue;
+        }
+
+        .btn-secondary:hover {
+            background-color: blue;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        /* Default for desktop and large screens */
+        @media (min-width: 1200px) {
+            .cta-container {
+                padding: 30px;
+            }
+
+            .cta-content {
+                padding: 40px;
+            }
+
+            .cta-headline {
+                font-size: 3rem;
+            }
+
+            .cta-description {
+                font-size: 1.2rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Large screens (Desktop and PC) */
+        @media (max-width: 1440px) {
+            .cta-container {
+                padding: 25px;
+            }
+
+            .cta-content {
+                padding: 35px;
+            }
+
+            .cta-headline {
+                font-size: 2.8rem;
+            }
+
+            .cta-description {
+                font-size: 1.15rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                font-size: 1.15rem;
+            }
+        }
+
+        /* Widescreen (large landscape displays) */
+        @media (max-width: 1600px) {
+            .cta-container {
+                padding: 30px;
+            }
+
+            .cta-content {
+                padding: 45px;
+            }
+
+            .cta-headline {
+                font-size: 3.2rem;
+            }
+
+            .cta-description {
+                font-size: 1.3rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Tablets and smaller screens (landscape mode) */
+        @media (max-width: 1024px) {
+            .cta-container {
+                padding: 20px;
+            }
+
+            .cta-content {
+                padding: 30px;
+            }
+
+            .cta-headline {
+                font-size: 2.5rem;
+            }
+
+            .cta-description {
+                font-size: 1.1rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                font-size: 1rem;
+            }
+        }
+
+        /* Portrait mode (Mobile and small tablets) */
+        @media (max-width: 768px) {
+            .cta-container {
+                padding: 20px;
+            }
+
+            .cta-content {
+                padding: 20px;
+            }
+
+            .cta-headline {
+                font-size: 2.2rem;
+            }
+
+            .cta-description {
+                font-size: 1.05rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                font-size: 1rem;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            /* Center text for smaller screens */
+            .cta-content,
+            .cta-headline,
+            .cta-description {
+                text-align: center;
+            }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 600px) {
+            .cta-container {
+                padding: 15px;
+            }
+
+            .cta-content {
+                padding: 15px;
+            }
+
+            .cta-headline {
+                font-size: 2rem;
+            }
+
+            .cta-description {
+                font-size: 1rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                font-size: 0.95rem;
+                padding: 10px 20px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .cta-container {
+                padding: 10px;
+            }
+
+            .cta-content {
+                padding: 10px;
+            }
+
+            .cta-headline {
+                font-size: 1.8rem;
+            }
+
+            .cta-description {
+                font-size: 0.95rem;
+                text-align:center !important;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="cta-container">
+        <div class="cta-content">
+            <h1 class="cta-headline">Ready to Begin Your Thought Leadership Journey?</h1>
+            <p class="cta-description">
+                The healthcare industry is at a crucial juncture, facing unprecedented challenges and opportunities. Your voice, your experience, and your vision are needed now more than ever.
+            </p>
+            <p class="cta-description">
+                Don't let your years of hard-won insights remain untapped. It's time to amplify your impact, shape the discourse, and leave a lasting legacy in healthcare.
+            </p>
+            <p class="cta-description">
+                Contact us today for a personalized consultation. We'll discuss your goals, assess your current positioning, and outline a tailored strategy to establish you as a prominent thought leader in healthcare.
+            </p>
+
+            <!-- Added buttons for Request a Meeting and Join Newsletter -->
+            <div class="flex-container">
+                <button class="btn-primary">Request a Meeting</button>
+                <button class="klaviyo_form_trigger3 btn-secondary">Join Our Newsletter</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        document.querySelector('.klaviyo_form_trigger3').addEventListener('click', function () {
+            window._klOnsite = window._klOnsite || []; 
+            window._klOnsite.push(['openForm', 'Y8GzAv']); // Replace FORM_ID with your actual form ID
+        });
+    </script>
+</body>
+</html>
