@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Downloadable Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /** {*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    box-sizing: border-box;*/
+        /*}*/
+
+        /*body {*/
+        /*    font-family: 'Manrope', sans-serif;*/
+        /*    background-color: #f4f4f4;*/
+        /*    color: #333;*/
+        /*    line-height: 1.6;*/
+        /*}*/
+
+        .container {
+            width: 100%;
+            max-width: 1300px;
+            margin: 20px auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 3em;
+            color: rgb(66, 91, 118);
+            margin-bottom: 40px;
+            text-transform: capitalize;
+            animation: fadeInTitle 2s ease-out;
+        }
+
+        @keyframes fadeInTitle {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .book-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .book-box {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Keep width at 48% for two columns layout */
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .book-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .book-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .book-box h3 {
+            font-size: 1.6em;
+            color: rgb(66, 91, 118);
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .book-box h3:hover {
+            color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .book-box p {
+            font-size: 1em;
+            color: rgb(66, 91, 118);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .book-box p:hover {
+            color: #0056b3;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            text-decoration: underline !important;
+            color: blue;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Media queries for responsiveness */
+
+        /* Large desktop screens (1366px and above) */
+        @media (min-width: 1366px) {
+            .container {
+                width: 100%;
+                max-width: 1300px;
+                padding: 40px 20px;
+            }
+
+            .book-box {
+                width: 48%; /* Two-column layout */
+            }
+
+            .title {
+                font-size: 3.2em; /* Larger title for wide screens */
+            }
+
+            .download-button {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+        }
+
+        /* Tablet landscape up to 1200px */
+        @media (max-width: 1200px) and (min-width: 880px) {
+            .container {
+                width: 95%;
+                padding: 35px 20px;
+            }
+
+            .book-box {
+                width: 48%; /* Two-column layout */
+            }
+
+            .title {
+                font-size: 2.8em;
+            }
+
+            .download-button {
+                font-size: 17px;
+                padding: 11px 22px;
+            }
+        }
+
+        /* Tablet portrait up to 1024px */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 30px 20px;
+            }
+
+            .book-box {
+                width: 48%; /* Two-column layout */
+            }
+
+            .title {
+                font-size: 2.6em;
+            }
+
+            .download-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Mobile landscape up to 880px */
+        @media (max-width: 880px) and (min-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 25px 15px;
+               
+
+                
+                
+            }
+
+            .book-box {
+                width:90%%; /* Two-column layout */
+                margin-bottom: 20px; 
+                justify-content: center;
+                align-items: center;
+                margin:0 auto;
+                
+            }
+
+            .title {
+                font-size: 2.4em;
+            }
+
+            .download-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Mobile portrait up to 767px */
+        @media (max-width: 767px) {
+            .container {
+                width: 95%;
+                padding: 20px 15px;
+            }
+
+            .book-box {
+                width: 100%; /* Single column layout */
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 2em;
+            }
+
+            .download-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Extra small mobile screens */
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.8em;
+            }
+
+            .book-box h3 {
+                font-size: 1.4em;
+            }
+
+            .download-button {
+                padding: 10px 20px;
+            }
+        }
+
+        /* Portrait and landscape orientation adjustments */
+        /* Portrait orientation for all screen sizes */
+        @media (orientation: portrait) {
+            .book-box {
+                width: 100%; /* Full width for portrait mode */
+            }
+        }
+
+        /* Landscape orientation for all screen sizes */
+        @media (orientation: landscape) {
+            .book-box {
+                width: 48%; /* Two columns for landscape mode */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="book-library">
+        <div class="container">
+            <h2 class="title">Downloadable Books</h2>
+            <div class="book-boxes">
+                <div class="book-box">
+                    <img src="https://www.pdqcom.com/hs-fs/hubfs/Content%20Offers/count-catalogue-thumbnail.jpg?width=900&height=1164&name=count-catalogue-thumbnail.jpg" alt="Book 1">
+                    <h3>The PDQ Count Catalog</h3>
+                    <p>This document, updated quarterly, includes our list of 304 HCP specialties and the specific number of contacts and email addresses in our database for each one.</p>
+                    <a href="#" class="download-button">Download Now</a>
+                </div>
+                <div class="book-box">
+                    <img src="https://www.pdqcom.com/hs-fs/hubfs/Content%20Offers/email-guidelines-thumbnail.jpg?width=900&height=1164&name=email-guidelines-thumbnail.jpg" alt="Book 2">
+                    <h3>Email Best Practices Ebook</h3>
+                    <p>Learn everything you need to know to send the best emails for prospecting, closing sales, and keeping customers happy with our free ebook.</p>
+                    <a href="#" class="download-button">Download Now</a>
+                </div>
+                <div class="book-box">
+                    <img src="https://www.pdqcom.com/hs-fs/hubfs/Content%20Offers/thumbnail-default.jpg?width=900&height=1164&name=thumbnail-default.jpg" alt="Book 3">
+                    <h3>The PDQ HCP Marketing Bootcamp</h3>
+                    <p>The HCP Marketing Bootcamp is a free, week-long series delivered via email. Each day, you will receive content breaking down the most important pieces of a successful HCP campaign.</p>
+                    <a href="#" class="download-button">Enroll Now</a>
+                </div>
+                <div class="book-box">
+                    <img src="https://www.pdqcom.com/hs-fs/hubfs/Content%20Offers/marketing-report-thumbnail.jpg?width=900&height=1164&name=marketing-report-thumbnail.jpg" alt="Book 4">
+                    <h3>The HCP Marketing Report</h3>
+                    <p>This collaborative report, conducted with pharmaceutical news provider FirstWord, reveals a number of interesting trends and insights to help position your marketing strategy for success.</p>
+                    <a href="#" class="download-button">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
