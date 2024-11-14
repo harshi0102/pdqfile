@@ -1,0 +1,711 @@
+/* Span Tag */
+.resource-text h2 span{
+	color:#0d5be2;
+	font-size:57px;
+	letter-spacing:5.5px;
+	text-transform:capitalize;
+	display:inline-block;
+	transform:translatex(0px) translatey(0px) !important;
+	line-height:1.2em;
+	font-weight:400;
+}
+
+/* Paragraph */
+.resource-library .resource-text p{
+	font-weight:400;
+	margin-top:35px;
+	font-family:'Manrope', sans-serif;
+}
+
+/* Link */
+.book-boxes .book-box a{
+	text-align:center;
+	font-family:'Manrope', sans-serif;
+}
+
+/* Paragraph */
+.book-boxes .book-box p{
+	font-family:'Manrope', sans-serif;
+	line-height:1.5em;
+	font-size:18px;
+}
+
+/* Tab link */
+.hentry .elementor .tab-link{
+	transform:translatex(0px) translatey(0px);
+	padding-right:0px;
+	padding-left:4px;
+}
+
+/* Tabs wrapper */
+.hentry .elementor .tabs-wrapper{
+	transform:translatex(0px) translatey(0px);
+}
+
+/* Scratch tab */
+.tab-section .tabs-wrapper .scratch-tab{
+	font-weight:600;
+}
+
+/* Slide out */
+.tab-section .tabs-wrapper .slide-out{
+	font-weight:600;
+	transform:translatex(0px) translatey(0px);
+}
+
+/* Image */
+.resource-library .resource-image img{
+	box-shadow:0px 4px 15px -41px rgba(0,0,0,0.1);
+}
+
+/* Resource content */
+.resource-library .resource-content{
+	background-color:transparent;
+}
+
+/* Heading */
+.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item h3{
+	font-size:26px !important;
+}
+
+/* Heading */
+.partner-section .partner-info h2{
+	transform:translatex(0px) translatey(0px);
+	letter-spacing:3.6px;
+	text-align:left;
+}
+
+/* Image */
+.partner-section .partner-image img{
+	text-align:right;
+}
+
+/* Partner buttons */
+.partner-section .partner-info .partner-buttons{
+	text-align:center;
+	transform:translatex(0px) translatey(0px);
+	font-family:'Manrope', sans-serif;
+}
+
+/* screen sizes larger than 1024px and smaller than 1440px */
+@media (min-width:1024px) and (max-width:1440px){
+
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-size:13px !important;
+		padding-right:30px !important;
+	}
+	
+	/* Partner button secondary */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info .partner-buttons .partner-button-secondary{
+		padding-left:31px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:52px !important;
+	}
+	
+}
+
+/* 1366px and smaller screen sizes */
+@media (max-width:1366px){
+
+	/* Heading a*/
+	.partner-section .partner-info h2{
+		
+	}
+	
+}
+
+/* 1200px and smaller screen sizes */
+@media (max-width:1200px){
+
+	/* Link */
+	.book-boxes .book-box a{
+		margin-top:-2px;
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-size:14px !important;
+		padding-right:19px;
+		padding-left:11px;
+	}
+	
+	/* Heading */
+	.book-boxes .book-box h3{
+		font-size:22px;
+	}
+	
+	/* Book box */
+	.book-library .book-boxes .book-box{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Paragraph */
+	.book-boxes .book-box p{
+		line-height:1.7em;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		font-size:43px !important;
+		transform:translatex(0px) translatey(0px);
+	}
+	
+}
+
+/* 1150px and smaller screen sizes */
+@media (max-width:1150px){
+
+	/* Partner button secondary */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info .partner-buttons .partner-button-secondary{
+		line-height:17.7px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:48px !important;
+	}
+	
+}
+
+/* 880px and smaller screen sizes */
+@media (max-width:880px){
+
+	/* Heading */
+	.tab-section .grid-item h3{
+		font-size:21px;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:32px !important;
+	}
+	
+}
+
+/* 760px and smaller screen sizes */
+@media (max-width:760px){
+
+	/* Span Tag */
+	.resource-text h2 span{
+		text-align:center;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		text-align:center;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:29px !important;
+	}
+	
+}
+
+/* 680px and smaller screen sizes */
+@media (max-width:680px){
+
+	/* Paragraph */
+	.resource-library .resource-text p{
+		transform:translatex(0px) translatey(0px);
+		font-size:18px;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+}
+
+/* 640px and smaller screen sizes */
+@media (max-width:640px){
+
+	/* Heading */
+	.resource-library .resource-text h2{
+		text-align:center;
+		font-size:31px !important;
+		line-height:1.3em;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		text-align:center;
+	}
+	
+	/* Span Tag */
+	.resource-text h2 span{
+		letter-spacing:0.6px;
+		font-size:35px;
+	}
+	
+	/* Heading */
+	.tab-section .grid-item h3{
+		font-size:17px;
+	}
+	
+}
+
+/* 500px and smaller screen sizes */
+@media (max-width:500px){
+
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#0d0d20 !important;
+		text-shadow:none;
+		font-size:27px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item h3{
+		transform:translatex(0px) translatey(0px) !important;
+		font-size:15px !important;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		font-size:18px;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:32px !important;
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-size:8px !important;
+	}
+	
+}
+
+/* 479px and smaller screen sizes */
+@media (max-width:479px){
+
+	/* Heading */
+	.lakit-site-wrapper #main .wf-wrap .wf-container-main #content .hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section h2{
+		transform:translatex(0px) translatey(0px) !important;
+	}
+	
+	/* Paragraph */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .resource-library .container .resource-content .resource-text p{
+		font-size:17px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:32px !important;
+	}
+	
+}
+
+/* 450px and smaller screen sizes */
+@media (max-width:450px){
+
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item h3{
+		transform:translatex(0px) translatey(0px) !important;
+		font-size:14px !important;
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#000000 !important;
+		text-shadow:none;
+		font-size:24px !important;
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-family:'Manrope', sans-serif;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		font-size:18px;
+	}
+	
+}
+
+/* 425px and smaller screen sizes */
+@media (max-width:425px){
+
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item h3{
+		font-size:12px !important;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px);
+		font-size:36px !important;
+	}
+	
+}
+
+/* 411px and smaller screen sizes */
+@media (max-width:411px){
+
+	/* Tab */
+	.hentry .elementor .tab{
+		display:inline;
+	}
+	
+	/* Tabs wrapper */
+	.hentry .elementor .tabs-wrapper{
+		display:inline;
+	}
+	
+	/* Grid container */
+	.tab-section .grid-container{
+		display:inline;
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#070717 !important;
+		text-shadow:none;
+		font-size:21px !important;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		display:inline-block;
+		transform:translatex(0px) translatey(0px) !important;
+		font-size:18px;
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		padding-right:12px;
+		padding-left:13px;
+		transform:translatex(0px) translatey(0px);
+		font-size:17px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:33px !important;
+	}
+	
+}
+
+/* 349px and smaller screen sizes */
+@media (max-width:349px){
+
+	/* Tab */
+	.hentry .elementor .tab{
+		display:inline;
+	}
+	
+	/* Heading */
+	.lakit-site-wrapper #main .wf-wrap .wf-container-main #content .hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section h2{
+		color:#202059 !important;
+	}
+	
+	/* Paragraph */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .resource-library .container .resource-content .resource-text p{
+		font-size:18px !important;
+	}
+	
+}
+
+/* 320px and smaller screen sizes */
+@media (max-width:320px){
+
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-size:13px !important;
+		font-family:'Manrope', sans-serif;
+		padding-right:0px;
+		padding-left:0px;
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		font-size:21px;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:30px !important;
+	}
+	
+}
+
+/* 300px and smaller screen sizes */
+@media (max-width:300px){
+
+	/* Partner button secondary */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info .partner-buttons .partner-button-secondary{
+		font-size:14px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:31px !important;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+}
+
+/* 481px and larger screen sizes */
+@media (min-width:481px){
+
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item h3{
+		letter-spacing:0.1px !important;
+		transform:translatex(0px) translatey(0px) !important;
+		font-size:16px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px) !important;
+		font-size:27px !important;
+	}
+	
+}
+
+/* 576px and larger screen sizes */
+@media (min-width:576px){
+
+	/* Active */
+	.tab-section .active{
+		display:flex;
+	}
+	
+	/* Tabs navigation container */
+	.hentry .elementor .tabs-navigation-container{
+		transform:translatex(0px) translatey(0px);
+		justify-content:center;
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#16162c !important;
+		text-shadow:none;
+		font-size:30px !important;
+	}
+	
+}
+
+/* 768px and larger screen sizes */
+@media (min-width:768px){
+
+	/* Tabs navigation container */
+	.hentry .elementor .tabs-navigation-container{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#0b0b31 !important;
+		text-shadow:rgba(0, 0, 0, 0.3) 0px 1px 1px;
+	}
+	
+	/* Heading */
+	.tab-section .grid-item h3{
+		font-size:18px;
+	}
+	
+	/* Active */
+	.tab-section .active{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+}
+
+/* 800px and larger screen sizes */
+@media (min-width:800px){
+
+	/* Heading */
+	.book-boxes .book-box h3{
+		font-size:21px;
+	}
+	
+	/* Heading */
+	.tab-section .grid-item h3{
+		font-size:20px;
+	}
+	
+	/* Tab button */
+	.tab-section .tab-button{
+		padding-right:15px;
+		transform:translatex(0px) translatey(0px);
+		margin-right:5px;
+		font-family:'Manrope', sans-serif;
+		font-size:18px;
+	}
+	
+	/* Tabs navigation container */
+	.hentry .elementor .tabs-navigation-container{
+		transform:translatex(0px) translatey(0px);
+		display:flex;
+		text-align:left;
+		float:none;
+		justify-content:center;
+		font-family:'Manrope', sans-serif;
+		font-size:18px;
+	}
+	
+	/* Active */
+	.tab-section .active{
+		font-family:'Manrope', sans-serif;
+		font-size:18px;
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		font-family:'Manrope', sans-serif;
+		transform:translatex(0px) translatey(0px);
+		padding-left:22px;
+		padding-right:23px;
+	}
+	
+	/* Heading */
+	.hentry .tab-section h2{
+		color:#0b0b22 !important;
+		text-shadow:none;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:37px !important;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		font-size:18px;
+	}
+	
+}
+
+/* 881px and larger screen sizes */
+@media (min-width:881px){
+
+	/* Grid item */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item{
+		transform:translatex(0px) translatey(0px) !important;
+	}
+	
+	/* Heading */
+	.tab-section .grid-item h3{
+		font-size:24px;
+	}
+	
+	/* Heading */
+	.book-boxes .book-box h3{
+		font-size:22px;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .book-library .container .book-boxes .book-box h3{
+		letter-spacing:-0.2px !important;
+	}
+	
+	/* Tabs navigation container */
+	.hentry .elementor .tabs-navigation-container{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+	/* Partner button secondary */
+	.partner-info .partner-buttons .partner-button-secondary{
+		padding-right:33px;
+		padding-left:27px;
+	}
+	
+	/* Paragraph */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .resource-library .container .resource-content .resource-text p{
+		font-size:18px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:44px !important;
+	}
+	
+}
+
+/* 961px and larger screen sizes */
+@media (min-width:961px){
+
+	/* Grid item */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .tab-section .tab-content-container .grid-container .grid-item{
+		padding-bottom:0px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .book-library .container .book-boxes .book-box h3{
+		font-size:22px !important;
+	}
+	
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:40px !important;
+	}
+	
+	/* Partner button secondary */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info .partner-buttons .partner-button-secondary{
+		padding-left:18px !important;
+	}
+	
+	/* Heading */
+	.partner-section .partner-info h2{
+		transform:translatex(0px) translatey(0px);
+	}
+	
+}
+
+/* 1168px and larger screen sizes */
+@media (min-width:1168px){
+
+	/* Heading */
+	.hentry .e-con-full .elementor-element .elementor-widget-container .elementor .elementor-top-section .e-con-inner .elementor-widget-html .elementor-widget-container .partner-section .partner-info h2{
+		font-size:48px !important;
+	}
+	
+}
+
+/* 1200px and larger screen sizes */
+@media (min-width:1200px){
+
+	/* Tab link */
+	.hentry .elementor .tab-link{
+		min-width:120px;
+	}
+	
+	/* Paragraph */
+	.resource-library .resource-text p{
+		font-size:20px;
+	}
+	
+}
+
+/* 1367px and larger screen sizes */
+@media (min-width:1367px){
+
+	/* Slide out */
+	.tab-section .tabs-wrapper .slide-out{
+		width:320px;
+		min-width:3px;
+	}
+	
+}
