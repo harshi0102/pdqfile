@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDQ-Bolt Resource Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global body styles */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.5rem !important;
+            text-align: left;
+            color: blue !important;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .highlight-text {
+            color: black;
+            font-weight: bold;
+        }
+
+        .highlight1-text {
+            color: #333;
+            font-weight: 400;
+        }
+
+        .resource-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .resource-text {
+            text-align: left;
+        }
+
+        .resource-text p {
+            font-size: 1.125rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        .resource-text p:hover {
+            color: black;
+        }
+
+        .resource-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .resource-image img:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tablet Landscape */
+        @media (max-width: 1200px) {
+            .resource-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                color: blue;
+            }
+
+            .resource-text p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Tablet Portrait */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                color: blue;
+            }
+
+            .resource-text p {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 880px) {
+            .container {
+                padding: 25px 10px;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+                color: blue;
+            }
+
+            .resource-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .resource-text p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px 10px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                color: blue;
+            }
+
+            .resource-text p {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Very Small Mobile Screens (up to 480px) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px 8px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                color: blue;
+            }
+
+            .resource-text p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Large Laptop or Desktop (min-width: 1200px) */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+                padding: 50px 40px;
+            }
+
+            h2 {
+                font-size: 2.1rem;
+                color: blue !important;
+            }
+
+            .resource-text p {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Landscape Orientation */
+        @media (orientation: landscape) {
+            .resource-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Portrait Orientation */
+        @media (orientation: portrait) {
+            .resource-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Widescreen - Large Desktops / TVs (min-width: 1600px) */
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1400px;
+                padding: 60px 50px;
+            }
+
+            h2 {
+                font-size: 2.4rem;
+                color: blue;
+            }
+
+            .resource-text p {
+                font-size: 1.2rem;
+            }
+
+            .resource-image img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="resource-library">
+        <div class="container">
+            <div class="resource-content">
+                <div class="resource-text">
+                    <h2><span class="highlight-text">Downloadable Resource Library</span></h2>
+                    <p><span class="highlight1-text">Check out PDQ’s exclusive selection of downloadable resources and content</span> loaded with information and insights to help you more effectively connect with your HCP audiences.</p>
+                </div>
+                <div class="resource-image">
+                    <img src="https://www.pdqcom.com/hubfs/Illustrations/Partners/Partners-Main.png" alt="Resource Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
