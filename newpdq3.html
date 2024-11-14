@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tabbed Layout with Animated Effects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Manrope', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: black;
+        }
+
+        .main-heading {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 3em;
+            color: #0066cc;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            animation: fadeInTitle 2s ease-in-out;
+            padding: 10px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .tabs-navigation-container {
+            display: flex;
+            justify-content: center;
+            background-color: #0079c2;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            margin-top: 30px;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tab-button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 22px;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            border-radius: 5px;
+            margin: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-button:hover {
+            background-color: #0066cc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab-button.active {
+            background-color: #333;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .tab-content-container {
+            display: none;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;display:flex;
+            flex-direction:column;
+            
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            color: black;
+            text-decoration: underline;
+            font-size: 16px;
+            font-family: 'Manrope', sans-serif;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0066cc;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeInTitle {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Devices (Max Width 767px) */
+        @media (max-width: 767px) {
+            .main-heading {
+                font-size: 2.2em;
+            }
+
+            .tabs-navigation-container {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                width: 100%;  /* Full width for tab buttons on mobile */
+                padding: 12px;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;  /* Single column for grid on mobile */
+            }
+
+            .grid-item {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Tablets and Laptops (Min Width 768px and Max Width 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .main-heading {
+                font-size: 2.8em;
+            }
+
+            .tabs-navigation-container {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);  /* Two columns for tablet screens */
+            }
+
+            .grid-item {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Desktop and Larger Screens (Min Width 1024px) */
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            .main-heading {
+                font-size: 3.5em;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);  /* Two columns for desktop screens */
+                gap: 30px;
+            }
+
+            .tab-button {
+                font-size: 18px;
+            }
+        }
+
+        /* Widescreen (Min Width 1440px) */
+        @media (min-width: 1440px) {
+            .main-heading {
+                font-size: 4em;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);  /* Three columns for widescreen */
+                gap: 40px;
+            }
+        }
+
+        /* Portrait and Landscape Adjustments */
+        @media (orientation: portrait) {
+            .grid-container {
+                grid-template-columns: 1fr;  /* Single column for portrait mode */
+            }
+
+            .main-heading {
+                font-size: 2.2em;
+            }
+        }
+
+        @media (orientation: landscape) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);  /* Two columns for landscape mode */
+            }
+
+            .main-heading {
+                font-size: 3em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="tab-section">
+    <h2 class="main-heading">Interactive Direct Mail Samples</h2>
+
+    <div class="tabs-navigation-container">
+        <button class="tab-button active" onclick="openTab(event, 'tab-1')">Scratch Off Mailers</button>
+        <button class="tab-button" onclick="openTab(event, 'tab-2')">3D PopUp Elements</button>
+        <button class="tab-button" onclick="openTab(event, 'tab-3')">Slide Out & Pull Away Displays</button>
+        <button class="tab-button" onclick="openTab(event, 'tab-4')">Interactive & Multi Layered Pieces</button>
+    </div>
+
+    <!-- Scratch Off Mailers Tab -->
+    <div id="tab-1" class="tab-content-container" style="display: block;">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Neurocrine Scratch Off Version 1</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+            <div class="grid-item">
+                <h3>Scratch Off Mailer Box 2</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D PopUp Elements Tab -->
+    <div id="tab-2" class="tab-content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>3D PopUp Element 1</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+            <div class="grid-item">
+                <h3>3D PopUp Element 2</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide Out Displays Tab -->
+    <div id="tab-3" class="tab-content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Slide Out Display 1</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+            <div class="grid-item">
+                <h3>Slide Out Display 2</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Pieces Tab -->
+    <div id="tab-4" class="tab-content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Interactive Piece 1</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+            <div class="grid-item">
+                <h3>Interactive Piece 2</h3>
+                <video controls style="border-radius: 5px;">
+                    <source src="path_to_video_8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="#" class="download-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    window.onload = function() {
+        // Automatically open the first tab (Scratch Off Mailers) when the page loads
+        var firstTab = document.querySelector('.tab-button');
+        if (firstTab) {
+            firstTab.click(); // Simulate a click on the first tab
+        }
+    };
+
+    function openTab(evt, tabId) {
+        var i, tabContents, tabButtons;
+
+        // Hide all tab contents
+        tabContents = document.querySelectorAll('.tab-content-container');
+        tabContents.forEach(function(content) {
+            content.style.display = 'none';
+        });
+
+        // Remove the "active" class from all tab buttons
+        tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(function(button) {
+            button.classList.remove('active');
+        });
+
+        // Show the selected tab content and add "active" class to the clicked tab
+        document.getElementById(tabId).style.display = 'block';
+        evt.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
