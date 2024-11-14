@@ -7,21 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
-        body {
-            font-family: 'Manrope', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: white;
-            color: black;
-        }
+        /*body {*/
+        /*    font-family: 'Manrope', sans-serif;*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    box-sizing: border-box;*/
+        /*    background-color: #f1fcff;*/
+        /*    color: black;*/
+        
 
         .partner-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 50px 20px;
-            background-color: white;
+            background-color: #f6fbfc !important;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             margin: 30px 20px;
@@ -62,7 +62,7 @@
 
         .partner-button, .partner-button-secondary {
             padding: 14px 35px;
-            font-size: 1.3em;
+            font-size:12px !important;
             background-color: #b60000 !important;  /* Red background */
             color: white;  /* White text */
             border: none;
@@ -81,6 +81,7 @@
         .partner-button-secondary {
             background-color: #00cc66; /* Keep the green for the secondary button */
             font-style:italic;
+            font-size: 18px !important;
         }
 
         .partner-button-secondary:hover {
@@ -98,7 +99,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);*/
             transition: transform 0.3s ease;
         }
 
@@ -117,8 +118,9 @@
             }
 
             .partner-info h2 {
-                font-size: 2.3em;
                 color: #7792a7 !important;
+                font-size: 18px !important;
+
             }
 
             .partner-info p {
@@ -132,7 +134,7 @@
             }
 
             .partner-button, .partner-button-secondary {
-                font-size: 1.1em;
+                 font-size:12px !important;
                 padding: 12px 25px;
             }
 
@@ -149,8 +151,9 @@
             }
 
             .partner-info h2 {
-                font-size: 2.5em;
                 color:#7792a7 !important;
+              font-size: 60px !important;
+
             }
 
             .partner-info p {
@@ -162,8 +165,8 @@
             }
 
             .partner-button, .partner-button-secondary {
-                font-size: 1.2em;
                 padding: 12px 30px;
+                font-size:12px !important;
             }
         }
 
@@ -174,8 +177,10 @@
             }
 
             .partner-info h2 {
-                font-size: 2.8em;
+              font-size: 60px !important;
                 color: #7792a7 !important;
+                
+
             }
 
             .partner-info p {
@@ -187,7 +192,7 @@
             }
 
             .partner-button, .partner-button-secondary {
-                font-size: 1.3em;
+font-size:12px !important;
                 padding: 14px 35px;
             }
         }
@@ -201,6 +206,8 @@
             .partner-info h2 {
                 font-size: 3em;
                 color:#7792a7 !important ;
+              font-size: 60px !important;
+
             }
 
             .partner-info p {
@@ -212,7 +219,7 @@
             }
 
             .partner-button, .partner-button-secondary {
-                font-size: 1.4em;
+                font-size: 12px !important;
                 padding: 16px 40px;
             }
 
@@ -220,6 +227,40 @@
                 max-width: 90%;
             }
         }
+@media (max-width: 880px) {
+    .partner-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .partner-info h2 {
+font-size:40px !important;
+text-align:center;
+color: #7792a7;
+    }
+
+    .partner-info p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .partner-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .partner-button, .partner-button-secondary {
+        font-size: 14px;
+        padding: 14px 30px;
+    }
+
+    .partner-image img {
+        max-width: 75%;
+        margin-top: 20px;
+    }
+}
 
         /* Keyframe Animations */
         @keyframes fadeIn {
@@ -247,6 +288,7 @@
             50% { transform: scale(1.1); opacity: 1; }
             100% { transform: scale(1); }
         }
+       
     </style>
 </head>
 <body>
@@ -255,7 +297,7 @@
     <!-- Partner Info Column -->
     <div class="partner-info">
         <h2>Partner With <br>Us Now!</h2>
-        <p>Connect with us to take your business to the next level. Let's collaborate and achieve greater success together.</p>
+        <!--<p>Connect with us to take your business to the next level. Let's collaborate and achieve greater success together.</p>-->
         <div class="partner-buttons">
             <button class="partner-button-secondary">Connect With Us</button>
         </div>
